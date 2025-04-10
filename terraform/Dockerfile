@@ -2,10 +2,10 @@
 FROM nginx:alpine
 
 #Remove
-RUN rm -rf /usr/share/nginx/html/
+#RUN rm -rf /usr/share/nginx/html/
 
 #Copy your htlm app to nginx web directory
-COPY app/ /usr/share/nginx/html/*
+COPY app/index.html /usr/share/nginx/html
 
 #Expose port
 EXPOSE 80
